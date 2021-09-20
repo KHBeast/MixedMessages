@@ -42,10 +42,10 @@ const moral = () => {
 };
 
 const generateSentence = () => {
-    subject();
-    predicate();
-    moral();
-    return (`Here is your elucidation: ${subject} + ' ' + ${predicate} + ' ' + ${moral}`);
+  sentSubject = subject();
+  sentPredicate = predicate();
+  sentMoral = moral();
+  return `Here is your elucidation: ${sentSubject} + ' ' + ${sentPredicate} + ' ' + ${sentMoral}`;
 };
 
-print(generateSentence());
+console.log(generateSentence());
